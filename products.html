@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Haven - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Sneaker Haven Logo">
+                <h1>Sneaker Haven</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="orders.html">Orders</a>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                <a href="register.html">Account</a>
+            </nav>
+            <div id="user-status">Welcome, Guest! <a href="register.html">Sign In</a></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Our Sneaker Collection</h2>
+            <div class="product-grid">
+                <div class="product" data-id="1">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300" alt="Red Sneakers">
+                    <h3>Red Blaze</h3>
+                    <p>$59.99</p>
+                    <button onclick="addToCart(1, 'Red Blaze', 59.99)">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2">
+                    <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=300" alt="White Sneakers">
+                    <h3>Pure White</h3>
+                    <p>$49.99</p>
+                    <button onclick="addToCart(2, 'Pure White', 49.99)">Add to Cart</button>
+                </div>
+                <div class="product" data-id="3">
+                    <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Black Sneakers">
+                    <h3>Midnight Kick</h3>
+                    <p>$69.99</p>
+                    <button onclick="addToCart(3, 'Midnight Kick', 69.99)">Add to Cart</button>
+                </div>
+                <div class="product" data-id="4">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=300" alt="Blue Sneakers">
+                    <h3>Ocean Stride</h3>
+                    <p>$54.99</p>
+                    <button onclick="addToCart(4, 'Ocean Stride', 54.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Sneaker Haven. Crafted with Passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Haven - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Sneaker Haven Logo">
+                <h1>Sneaker Haven</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="orders.html">Orders</a>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                <a href="register.html">Account</a>
+            </nav>
+            <div id="user-status">Welcome, Guest! <a href="register.html">Sign In</a></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Total: $0.00</p>
+            <button id="checkout-button" disabled>Checkout</button>
+            <div id="cart-empty" style="display: none;">
+                <img src="https://images.unsplash.com/photo-1626729632264-6d88427dfc46?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Empty Sneaker Shelf">
+                <p>Your cart is empty! Time to snag some kicks.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Sneaker Haven. Crafted with Passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
