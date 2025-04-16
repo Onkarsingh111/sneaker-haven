@@ -29,10 +29,18 @@ function handleRegisterForm() {
         const username = document.getElementById('reg-username').value;
         const email = document.getElementById('reg-email').value;
         const password = document.getElementById('reg-password').value;
+        const confirmPassword = document.getElementById('reg-confirm-password').value; // NEW
         const message = document.getElementById('register-message');
 
-        if (!username || !email || !password) {
+        if (!username || !email || !password || !confirmPassword) { // Updated
             message.textContent = 'Please fill all fields!';
+            message.style.color = 'red';
+            return;
+        }
+
+        // NEW: Password match check
+        if (password !== confirmPassword) {
+            message.textContent = 'Passwords do not match!';
             message.style.color = 'red';
             return;
         }
